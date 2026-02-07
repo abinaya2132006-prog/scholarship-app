@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scholarship Eligibility Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h2>Scholarship Eligibility Checker (India & Tamil Nadu)</h2>
+
+    <form action="/check" method="post">
+        <label>12th Percentage</label>
+        <input type="number" name="percentage" required>
+
+        <label>Community</label>
+        <select name="community" required>
+            <option>SC</option>
+            <option>ST</option>
+            <option>BC</option>
+            <option>MBC</option>
+            <option>OBC</option>
+            <option>General</option>
+        </select>
+
+        <label>Annual Family Income (₹)</label>
+        <input type="number" name="income" required>
+
+        <label>Gender</label>
+        <select name="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Course Type</label>
+        <select name="course" required>
+            <option>UG</option>
+            <option>Diploma</option>
+            <option>ITI</option>
+        </select>
+
+        <label>First Graduate</label>
+        <select name="first_graduate" required>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Tamil Nadu Resident</label>
+        <select name="tn_resident" required>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <button type="submit">Check Eligibility</button>
+    </form>
+</body>
+
+</html>

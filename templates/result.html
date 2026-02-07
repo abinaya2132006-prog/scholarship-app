@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eligibility Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h2>Scholarship Eligibility Result</h2>
+
+    {% if eligible %}
+    <h3 style="color:green;">🎉 You are ELIGIBLE</h3>
+    <ul>
+        {% for s in scholarships %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h3 style="color:red;">❌ You are NOT ELIGIBLE</h3>
+    <p>No scholarships available based on your details.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Check Another Student</a>
+</body>
+
+</html>
